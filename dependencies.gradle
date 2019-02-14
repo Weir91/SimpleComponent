@@ -8,8 +8,8 @@ ext {
             compileSdkVersion       : 28,
             minSdkVersion           : 21,
             targetSdkVersion        : 28,
-            versionCode             : 001,
-            versionName             : "0.0.1"
+            versionCode             : 002,
+            versionName             : "0.0.2"
     ]
 
     version = [
@@ -68,13 +68,15 @@ ext {
             "eventbus"                  : "org.greenrobot:eventbus:3.1.1",
             "tedpermission"             : "gun0912.ted:tedpermission-rx2:2.2.2",
             "utilcode"                  : "com.blankj:utilcode:1.12.5",
+            "imgsel"                  : "com.yuyh.imgsel:library:2.0.6",
 
             //view
             "vlayout"                   : "com.alibaba.android:vlayout:1.2.8@aar",
             "ultraviewpager"            : "com.alibaba.android:ultraviewpager:1.0.7.7@aar",
             "flexbox"                   : "com.google.android:flexbox:1.1.0",
             "aterial-dialogs"           : "com.afollestad.material-dialogs:core:2.0.0",
-            "convenientbanner"           : "com.bigkoo:ConvenientBanner:2.1.4",
+            "convenientbanner"          : "com.bigkoo:ConvenientBanner:2.1.4",
+            "qmui"                      : "com.qmuiteam:qmui:1.1.11",
     ]
 
 

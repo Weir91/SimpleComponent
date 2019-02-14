@@ -75,6 +75,7 @@ dependencies {
     api rootProject.ext.dependencies["eventbus"     ]
     api rootProject.ext.dependencies["tedpermission"]
     api rootProject.ext.dependencies["utilcode"     ]
+    api rootProject.ext.dependencies["imgsel"       ]
 
     //view
     api (rootProject.ext.dependencies["vlayout"]) {
@@ -86,6 +87,7 @@ dependencies {
     api rootProject.ext.dependencies["flexbox"          ]
     api rootProject.ext.dependencies["aterial-dialogs"  ]
     api rootProject.ext.dependencies["convenientbanner" ]
+    api rootProject.ext.dependencies["qmui" ]
 }
 repositories {
     mavenCentral()
