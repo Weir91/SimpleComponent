@@ -39,6 +39,10 @@ dependencies {
     kapt rootProject.ext.dependencies["arouter-compiler"]
 
     implementation project(':base')
+
+    if (!rootProject.ext.isExampleAApplication) {
+        implementation project(':example_a')
+    }
 }
 repositories {
     mavenCentral()

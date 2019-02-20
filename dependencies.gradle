@@ -8,8 +8,8 @@ ext {
             compileSdkVersion       : 28,
             minSdkVersion           : 21,
             targetSdkVersion        : 28,
-            versionCode             : 002,
-            versionName             : "0.0.2"
+            versionCode             : 003,
+            versionName             : "0.0.3"
     ]
 
     version = [
@@ -19,18 +19,6 @@ ext {
     ]
 
     dependencies = [
-            //support
-//            "appcompat-v7"             : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
-//            "design"                   : "com.android.support:design:${version["androidSupportSdkVersion"]}",
-//            "palette"                  : "com.android.support:palette-v7:${version["androidSupportSdkVersion"]}",
-//            "support-v4"               : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
-//            "cardview-v7"              : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
-//            "annotations"              : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
-//            "recyclerview-v7"          : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
-//            "constraint-layout"        : "com.android.support.constraint:constraint-layout:${version["constraintVersion"]}",
-//            "percent"                  : "com.android.support:percent:${version["androidSupportSdkVersion"]}",
-//            "multidex"                 : "com.android.support:multidex:1.0.1",
-
             //android test
             "junit"                      : "junit:junit:4.12",
             "test-runner"               : "androidx.test:runner:1.1.2-alpha01",
@@ -68,7 +56,7 @@ ext {
             "eventbus"                  : "org.greenrobot:eventbus:3.1.1",
             "tedpermission"             : "gun0912.ted:tedpermission-rx2:2.2.2",
             "utilcode"                  : "com.blankj:utilcode:1.12.5",
-            "imgsel"                  : "com.yuyh.imgsel:library:2.0.6",
+            "imgsel"                    : "com.yuyh.imgsel:library:2.0.6",
 
             //view
             "vlayout"                   : "com.alibaba.android:vlayout:1.2.8@aar",

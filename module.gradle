@@ -1,0 +1,5 @@
+ext {
+    // 格式 is + moduleName + Application + = + Boolean
+    isExampleAApplication = false
+
+}
