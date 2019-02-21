@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.alibaba.arouter'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        resValue("string","OSS_ACCESS_KEY",rootProject.ext.constant["OSS_ACCESS_KEY"])
+        resValue("string","OSS_SECRET_KEY",rootProject.ext.constant["OSS_SECRET_KEY"])
+        resValue("string","OSS_HOST"      ,rootProject.ext.constant["OSS_HOST"])
+        resValue("string","OSS_BUCKET"    ,rootProject.ext.constant["OSS_BUCKET"])
+    }
+    kapt {
+        arguments {
+            arg("AROUTER_MODULE_NAME", project.getName())
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation rootProject.ext.dependencies["junit"]
+    androidTestImplementation rootProject.ext.dependencies["test-runner"]
+    androidTestImplementation rootProject.ext.dependencies["espresso"]
+    implementation project(':base')
+    kapt rootProject.ext.dependencies["arouter-compiler"]
+
+
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.9.0'
+}
