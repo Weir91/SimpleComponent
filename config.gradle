@@ -1,0 +1,11 @@
+ext {
+    // 项目的常量配置
+    // 当前列举部分常见
+    constant = [
+            OSS_ACCESS_KEY  : "",
+            OSS_SECRET_KEY  : "",
+            OSS_HOST        : "",
+            OSS_BUCKET      : ""
+    ]
+
+}

@@ -1,15 +1,12 @@
 
 ext {
 
-    //false:作为Lib组件存在， true:作为application存在
-    isApplication = false
-
     android = [
             compileSdkVersion       : 28,
             minSdkVersion           : 21,
             targetSdkVersion        : 28,
-            versionCode             : 003,
-            versionName             : "0.0.3"
+            versionCode             : 004,
+            versionName             : "0.0.4-alpha-1"
     ]
 
     version = [
