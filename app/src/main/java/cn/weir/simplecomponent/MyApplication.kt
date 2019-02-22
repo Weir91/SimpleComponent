@@ -1,6 +1,7 @@
 package cn.weir.simplecomponent
 
 import android.app.Application
+import cn.figo.example_a.ExampleAInterface
 import cn.weir.base.SimpleComponentInterface
 
 /**
@@ -15,6 +16,8 @@ class MyApplication : Application() {
         SimpleComponentInterface.setDebugMode(true)
         SimpleComponentInterface.init(this)
 
+        //Example A 模块
+        ExampleAInterface.init(this)
     }
 
 }

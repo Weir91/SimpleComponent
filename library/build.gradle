@@ -39,9 +39,9 @@ dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
 
     //android test
-    testImplementation rootProject.ext.dependencies["junit"]
+    testImplementation rootProject.ext.dependencies["junit"             ]
     androidTestImplementation rootProject.ext.dependencies["test-runner"]
-    androidTestImplementation rootProject.ext.dependencies["espresso"]
+    androidTestImplementation rootProject.ext.dependencies["espresso"   ]
 
     //kotlin
     api rootProject.ext.dependencies["kotlin-stdlib"]
@@ -63,12 +63,12 @@ dependencies {
     api rootProject.ext.dependencies["rxkotlin2"    ]
 
     //router
-    api rootProject.ext.dependencies["arouter-api"]
+    api rootProject.ext.dependencies["arouter-api"      ]
     kapt rootProject.ext.dependencies["arouter-compiler"]
 
     //image
-    api rootProject.ext.dependencies["glide"]
-    kapt rootProject.ext.dependencies["glide-compiler"]
+    api rootProject.ext.dependencies["glide"                ]
+    kapt rootProject.ext.dependencies["glide-compiler"      ]
     api rootProject.ext.dependencies["glide-transformations"]
 
     //tools
@@ -87,7 +87,7 @@ dependencies {
     api rootProject.ext.dependencies["flexbox"          ]
     api rootProject.ext.dependencies["aterial-dialogs"  ]
     api rootProject.ext.dependencies["convenientbanner" ]
-    api rootProject.ext.dependencies["qmui" ]
+    api rootProject.ext.dependencies["qmui"             ]
 }
 repositories {
     mavenCentral()

@@ -43,6 +43,8 @@ dependencies {
     if (!rootProject.ext.isExampleAApplication) {
         implementation project(':example_a')
     }
+
+//    implementation project(':figo')
 }
 repositories {
     mavenCentral()
