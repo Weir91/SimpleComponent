@@ -9,7 +9,7 @@ import com.umeng.socialize.media.UMImage;
 import com.umeng.socialize.media.UMWeb;
 
 
-public class ShareHelper {
+public class FigoShareHelper {
 
     private static SHARE_MEDIA[] shareMedia = {SHARE_MEDIA.WEIXIN, SHARE_MEDIA.WEIXIN_CIRCLE, SHARE_MEDIA.QQ, SHARE_MEDIA.QZONE, SHARE_MEDIA.SINA};
 

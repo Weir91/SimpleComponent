@@ -44,7 +44,7 @@ dependencies {
         implementation project(':example_a')
     }
 
-//    implementation project(':figo')
+    implementation project(':figo')
 }
 repositories {
     mavenCentral()
